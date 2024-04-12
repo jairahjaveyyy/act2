@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="flex justify-between p-5 ">
+        <div class="flex text-2xl">
+            <a href=""><i class="fa-solid fa-bars p-2"></i></a>
+            <h4>Javeyyy's<span class="font-bold">Shop</span></h4>
+        </div>
+
+        <div class="  flex  bg-slate-300 text-black  rounded-full  text-1xl font-bold  ">
+            <h4 class=" bg-gray-700 text-white rounded-full p-2">Delivery</h4>
+            <h4 class="p-2">Pick Up</h4>
+        </div>
+
+        <div class="search-container hidden md:block lg:ml-80 lg:mr-24 bg-gray-100 rounded-full w-[700px]">
+            <form action="/search" method="get">
+              <i class="fa-solid fa-magnifying-glass p-2"></i>
+              <input type="text" placeholder="Search..." name="q" class="bg-transparent p-2 ">
+            </form>
+          </div>
+
+          <div class="flex text-2xl">
+            <i class="fa-solid fa-cart-shopping p-2"></i>
+            <h4>Cart</h4>
+          </div>
+    </div>
+
+  <div class="grid place-items-center relative ">
+        <img class="h-[500px] w-5/6 object-cover " src="https://images.unsplash.com/photo-1500353391678-d7b57979d6d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        <div class="absolute  h-[500px] w-5/6 bg-black/40 text-6xl font-bold p-5">
+            <p class="text-white">The <span class="">Best</span></p>
+            <p class="text-green-500">Coffee <span>Taste</span></p>
+        </div>
+  </div>
+
+  <div class=" grid place-items-center  mt-10">
+    <div class="grid gfrid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-5/6 gap-4">
+
+      <div class="relative">
+        <img class="h-60 w-[550px] object-cover" src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        <div class="absolute top-0 left-0 h-full w-full  bg-black/40 text-3xl font-bold p-5">
+            <p class="text-white">Caramel</span></p>
+            <p class="text-green-500 text-2xl">Through 4/26</p>
+            <button class="bg-white p-2 mt-16 text-sm rounded-md hover:bg-green-100">Order Now!</button>
+        </div>
+
+      </div>
+
+      <div class="relative">
+        <img class="h-60 w-[550px] object-cover" src="https://images.unsplash.com/photo-1503481766315-7a586b20f66d?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        <div class="absolute top-0 left-0 h-full w-full  bg-black/40 text-3xl font-bold p-5">
+            <p class="text-white">Macchiato</p>
+            <p class="text-green-500 text-2xl">Through 4/26</span></p>
+            <button class="bg-white p-2 mt-16 text-sm rounded-md hover:bg-green-100">Order Now!</button>
+        </div>
+      </div>
+
+
+      <div class="relative">
+        <img class="h-60 w-[550px] object-cover" src="https://images.unsplash.com/photo-1545319261-f3760f9dd64d?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        <div class="absolute top-0 left-0 h-full w-full  bg-black/40 text-3xl font-bold p-5">
+            <p class="text-white">Black Coffee</p>
+            <p class="text-green-500 text-2xl">Through 4/26</p>
+            <button class="bg-white p-2 mt-16 text-sm rounded-md hover:bg-green-100">Order Now!</button>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+<div class="div">
+    <h1 class="text-4xl font-bold text-center mt-24">Top Rated Menu Items</h1>
+
+    <div class="m-6 lg:ml-40 ">
+        <h4 class="mb-4">Filter</h4>
+        <div>
+            <button class="p-4 border-black border-solid  border-2 hover:bg-black hover:text-white">All</button>
+            <button class="p-4 border-black border-solid  border-2 hover:bg-black hover:text-white">Caramel</button>
+            <button class="p-4 border-black border-solid  border-2 hover:bg-black hover:text-white">Vanilla</button>
+            <button class="p-4 border-black border-solid  border-2 hover:bg-black hover:text-white">Original</button>
+        </div>
+
+        <h4 class="mb-4 mt-5">Filter Price</h4>
+        <div >
+            <button class="p-4 border-black border-solid  border-2 hover:bg-black hover:text-white"><i class="fa-solid fa-dollar-sign"></i></button>
+            <button class="p-4 border-black border-solid  border-2 hover:bg-black hover:text-white"><i class="fa-solid fa-dollar-sign"></i> <i class="fa-solid fa-dollar-sign"></i></button>
+            <button class="p-4 border-black border-solid  border-2 hover:bg-black hover:text-white"><i class="fa-solid fa-dollar-sign"></i> <i class="fa-solid fa-dollar-sign"></i> <i class="fa-solid fa-dollar-sign"></i></button>
+          
+        </div>
+    </div>
+
+    <div class="grid place-items-center  lg:mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-5/6 gap-2">
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1498709112912-9be3173d30be?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+             <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fHw%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1561478908-d067fe75a553?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1550731358-491ded4af838?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1473923377535-0002805f57e8?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1536227661368-deef57acf708?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+
+            <div class="h-[300px] w-[380px] bg-gray-300 rounded-lg">
+                <img class="h-60 w-[380px] object-cover rounded-lg" src="https://images.unsplash.com/photo-1534234757579-8ad69d218ad4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold">This is coffee</p>
+                    <p class="bg-black text-white p-2 rounded-lg"><i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
